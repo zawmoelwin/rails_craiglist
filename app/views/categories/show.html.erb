@@ -1,0 +1,13 @@
+<div><p>
+<%=@category.name%>
+</p>
+</div>
+<div>
+  <ul>
+    <%@articles.each do |article|%>
+    <%= article.title%>
+    <%=article.description%>
+    <%=article.price%>
+    <%end%>
+  </ul>
+</div>
